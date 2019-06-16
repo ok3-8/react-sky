@@ -3,25 +3,24 @@ import ReactDOM from "react-dom";
 import { transform } from "babel-standalone";
 import Button from "@material-ui/core/Button";
 
-import "./styles.css";
+const mdCode = `
+      render() {
+        return (
+          <div>
+            <Button>Default Button</Button>
+            <Button variant="outlined" color="primary">Primary Button</Button>
+            <Button variant="outlined" color="secondary">Secondary Button</Button>
+          </div>
+        )
+      }
+  `;
 
-function code2Component() {
-  const mdCode = `
-        render() {
-          return (
-            <div>
-              <Button>Default Button</Button>
-              <Button variant="outlined" color="primary">Primary Button</Button>
-              <Button variant="outlined" color="secondary">Secondary Button</Button>
-            </div>
-          )
-        }
-    `;
+function code2Component(codeString) {
 
   const code = transform(
     `
         class Demo extends React.Component {
-          ${mdCode}
+          ${codeString}
         }
         ReactDOM.render(<Demo />, document.getElementById('demo'))
       `,
@@ -46,7 +45,7 @@ function App() {
 }
 
 setTimeout(() => {
-  code2Component();
+  code2Component(mdCode);
 }, 800);
 
 const rootElement = document.getElementById("root");
