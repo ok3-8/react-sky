@@ -5,3 +5,4 @@
 
 那么一个UI 组件库使用文档 页面该怎么实现呢，包括能markdown转义为code，而且code view该怎么处理和实现，代码块高亮和修改能及时响应到呈现出来。
 
+<iframe src="https://codesandbox.io/embed/fancy-night-87kse?fontsize=14" title="fancy-night-87kse" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
