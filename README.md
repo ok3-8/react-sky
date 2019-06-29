@@ -32,6 +32,10 @@
 - 关于单向数据流的技术范畴
 ...
 
+React内核知识：
+ 组件、JSX、Virtual DOM、Flux架构、Redux、react-redux和性能优化。   
+ 一些非常酷的东西：Hooks、惰性加载、Suspense 和缓存 API。
+
 ## 卖艺不卖身
 
 博学之，审问之，慎思之，明辨之，笃行之。
