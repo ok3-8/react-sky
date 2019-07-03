@@ -302,7 +302,21 @@ Material UI 的所有样式均采用了 CSS in JS 来做，这意味着所有的
 @material-ui/styles  
 
 参考： https://segmentfault.com/q/1010000012687223
+https://zhuanlan.zhihu.com/p/32898912
+https://zhuanlan.zhihu.com/p/47201472
+https://www.zhihu.com/question/51040975
 
+# 脚手架
+
+1、create-react-app webpack.config.json
+2、babel 7+
+3、TS
+
+how to set webpack config?
+how to develop & build ?
+how to use ts?
+
+webpack4+babel7+react16.8
 
 # 其它
 
