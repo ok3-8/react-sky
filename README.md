@@ -63,11 +63,11 @@ React内核知识：
 ## 资源
 
 A collection of awesome TypeScript resources：   
-https://github.com/semlinker/reactjs-interview-questions
+https://github.com/semlinker/reactjs-interview-questions  
 awesome typescript：  
-https://github.com/semlinker/awesome-typescript
+https://github.com/semlinker/awesome-typescript  
 List of top 304 ReactJS Interview Questions & Answers：
-https://github.com/semlinker/reactjs-interview-questions
+https://github.com/semlinker/reactjs-interview-questions  
 深入理解 TypeScript：
 https://jkchao.github.io/typescript-book-chinese/
 
