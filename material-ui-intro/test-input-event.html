@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=0">
+  <meta name="theme-color" content="#000000" />
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Cache-Control" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>test input event</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <input type="text" id="username" />
+  <script type="text/javascript">
+    var result = [];
+    var username = document.getElementById('username');
+
+    username.addEventListener("focus", function(event) {
+        result.push({
+            event  : 'focus',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+    })
+    username.addEventListener("input", function(event) {
+        result.push({
+            event  : 'input',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+    })
+    //  注册keydown事件
+    username.addEventListener("keydown", function(event) {
+        result.push({
+            event  : 'keydown',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+    });
+    //  注册keyup事件
+    username.addEventListener("keyup", function(event) {
+        result.push({
+            event  : 'keyup',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+    });
+    //  注册change事件
+    username.addEventListener("change", function(event) {
+        result.push({
+            event  : 'change',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+        //  输出结果
+        console.table(result);
+    });
+    //  注册blur事件
+    username.addEventListener("blur", function(event) {
+        result.push({
+            event  : 'blur',
+            value  : this.value,
+            keyCode : event.keyCode
+        });
+        //  输出结果
+        console.table(result);
+    })
+    
+  </script>
+
+  <div id="app"></div>
+</body>
+</html>
