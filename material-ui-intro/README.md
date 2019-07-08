@@ -301,10 +301,10 @@ Material UI 的所有样式均采用了 CSS in JS 来做，这意味着所有的
 
 @material-ui/styles  
 
-参考： https://segmentfault.com/q/1010000012687223
-https://zhuanlan.zhihu.com/p/32898912
-https://zhuanlan.zhihu.com/p/47201472
-https://www.zhihu.com/question/51040975
+参考： https://segmentfault.com/q/1010000012687223   
+https://zhuanlan.zhihu.com/p/32898912   
+https://zhuanlan.zhihu.com/p/47201472  
+https://www.zhihu.com/question/51040975   
 
 # 脚手架
 
@@ -317,6 +317,23 @@ how to develop & build ?
 how to use ts?
 
 webpack4+babel7+react16.8
+
+
+## PPT 
+
+TS 的写法规范  
+事件的类型对于react上  
+对接高阶组件  
+生命周期  
+react的最新写法  
+react redux-saga  
+TS 工具  
+设计模式
+
+react 源码  
+受控组件 input  
+
+
 
 # 其它
 
