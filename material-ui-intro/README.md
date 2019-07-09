@@ -240,37 +240,47 @@ withStyles 是一个 HOC 组件，会为你的 AppBar 组件根据当前的 them
 
 先说下 Material-UI 中默认支持的样式吧，使用的是 CSS-In-JS 方案，也就是 JSS, 而你写的样式都是 Object, 所以，需要把你的对象 JSS to classes，就是 JSS 利用你的 object 生成样式，并且把所有的 classnames 成为一个对象为 classes 通过 props 传递给你的下一级组件。
 
+```js
 const styles = { root: { width: '100%' } };  
+```
 -> CSS :  
-
 ComponentName-root_0 { width: 100%; };   
 -> classes  
+```js
+  const classes = { root: 'ComponentName-root_0' };   
+```
 
-const classes = { root: 'ComponentName-root_0' };   
 withStyles(stypes) 步骤完成你的完整代码是：withStyles(stypes)(Component) 如下(withStyles(stypes) 代码如下)：  
- 
-return (Component) => (props) => (<Component {...props} classes={classes} />);
 
+```js 
+  return (Component) => (props) => (<Component {...props} classes={classes} />);
+```
 
 withStyles的作用会把css-in-js形式的js对象转为真正的css，如：  
 
+```js
 const styles = (theme) => ({
   testhaha: { height: 140 },
   root: { height: 840 },
 })
-转成css后：   
+```
+
+转成css后：  
 
 .test1-testhaha-1{
-    height: 140px
+  height: 140px
 }
 .test1-root-2{
-    height: 840px
-}   
+  height: 840px
+}  
+ 
+
 ps. 这里的test1前缀，是可以自定义的，自定义方法在后面   
 好了，转换之后，样式class名整个不一样了，我要写JSX的，我怎么知道该往JSX里的className="???"填什么？  
 
 答案是：withStyles(styles,{name:'test1'})(Connections)中，Connections是下面的class对象，它的构造函数就能接收到经过转换的样式class名，方法：
 
+```js
 class Connections extends Component {
   constructor (props) {
       super(props)
@@ -286,13 +296,14 @@ class Connections extends Component {
     )
   }
 }
+```
 上面props.classes内容会是：
-
+```
  {
    testhaha: 'test1-testhaha-1',
    root: 'test1-root-2',
  }
- 
+```
 相信看到这个打印内容，以及被转换后的css-in-js，就知道它们之间的关联了吧   
 
 Material UI 的所有样式均采用了 CSS in JS 来做，这意味着所有的样式都是    inline（内联）的，有着非常高的优先级。好在，Material UI 中大部分组件都暴露了 style 甚至 childComponentStyle 这样的“接口”（即 props）供你使用，具体可以参见官方文档。   
@@ -308,13 +319,13 @@ https://www.zhihu.com/question/51040975
 
 # 脚手架
 
-1、create-react-app webpack.config.json
-2、babel 7+
-3、TS
+1、create-react-app webpack.config.json  
+2、babel 7+  
+3、TS  
 
-how to set webpack config?
-how to develop & build ?
-how to use ts?
+how to set webpack config?  
+how to develop & build ?  
+how to use ts?  
 
 webpack4+babel7+react16.8
 
@@ -324,6 +335,7 @@ webpack4+babel7+react16.8
 TS 的写法规范  
 事件的类型对于react上  
 对接高阶组件  
+Hook  
 生命周期  
 react的最新写法  
 react redux-saga  
@@ -332,6 +344,51 @@ TS 工具
 
 react 源码  
 受控组件 input  
+
+## 用法
+
+keyof and in
+```js
+interface iPeople {
+  name: string;
+  age: number
+}
+
+type T = keyof iPeople // -> "name" | "age"
+
+type Keys = "a" | "b"
+type Obj =  {
+  [p in Keys]: any
+} // -> { a: any, b: any }
+```
+```js
+// 对象
+this.setState({
+
+})
+
+// 函数，一般是用于在setState之前做一些操作
+this.setState(
+  () => {
+    // TODO
+    console.log('')
+    return {
+      a:300
+    }
+  }
+)
+
+// 第二个参数，一般是用于在setState之后做一些操作
+this.setState({
+  a:300
+}, () => {
+  // TODO
+})
+```
+
+setState可能是同步的  
+setState 在react里的合成事件和钩子函数中是“异步”的。  
+setState 在原生事件和 setTimeout 中是同步的。  
 
 
 
