@@ -391,6 +391,38 @@ setState 在react里的合成事件和钩子函数中是“异步”的。
 setState 在原生事件和 setTimeout 中是同步的。  
 
 
+```js
+import {MouseEvent, Component} from 'react';
+import * as React from 'react';
+
+type Props = {
+  onClick(e: MouseEvent<HTMLElement>): void;
+  color?: 'blue' | 'green' | 'red';
+  type?: 'button' | 'submit';
+}
+class Button extends Component<Props> {
+  static defaultProps = {
+    color: 'blue',
+    type: 'button'
+  };
+  render() {
+    const {onClick: handleClick, color, type, children} = this.props;
+    return (
+      <button
+        type={type}
+        style={{color}}
+        onClick={handleClick}
+      >
+        {children}
+      </button>
+    );
+  }
+}
+export default Button;
+```
+
+
+
 
 # 其它
 
