@@ -18,4 +18,4 @@ https://juejin.im/post/5d23e750f265da1b855c7bbe
 - [搭建Typescript+React项目模板(5) --- 团队规范](https://juejin.im/post/5bac89aaf265da0afe62ebcb)  
 - [TypeScript在react项目中的实践](https://juejin.im/post/5b83a02ff265da43737e9a27)  
 - [TypeScript 在 React 中使用总结](https://juejin.im/post/5bab4d59f265da0aec22629b)  
-- []()  
+- [The complete guide to static typing in "React & Redux" apps using TypeScript](https://github.com/piotrwitek/react-redux-typescript-guide)  
