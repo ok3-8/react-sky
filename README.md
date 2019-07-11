@@ -29,7 +29,7 @@ ES7 React snippets
 TS的声明文件。  
 
 
-## feature
+## Feature
 
 - 关于TS在react的技巧和实现
 - 关于reduce-saga的接入和内核原理
