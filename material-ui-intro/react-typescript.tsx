@@ -149,11 +149,22 @@ dva umi
 PlayerWoner: Player | NoMen
 
 
+// ============
 
 
+@types/react-router 必须安装
 
 
+interface Props extends RouteComponentProps { }
 
+export default withRouter(Index);
+
+以上组件之后,你便可使用this.props.hoisty.push() js 跳转 和 <Link /> 组件中实现跳转
+
+interface RouterInfo {
+	id:any
+  }
+  interface Props extends RouteComponentProps <RouterInfo >{ }
 
 
 

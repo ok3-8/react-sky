@@ -2,7 +2,23 @@ https://juejin.im/post/5cad39b3f265da03502b1c0a
 https://juejin.im/post/5d23e750f265da1b855c7bbe  
 
 
+Cheatsheets for experienced React developers getting started with TypeScript 
+https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
 
+https://zhuanlan.zhihu.com/p/65445730
+
+https://zhuanlan.zhihu.com/p/62401626
+
+https://github.com/trending/typescript?since=monthly
+
+
+所有能用 JS 写的框架，都将用 TypeScript 写。
+
+Node 中 Nest 也是用 TypeScript 开发的，还有像 deno。另外 UI 组件库中， Ant Desgin 和 Blueprint 也是的。
+
+
+解读TypeScript中的泛型以及条件类型中的推断
+https://juejin.im/post/5d0cf23af265da1b855c5ef6
 ## 参考
 
 - [深入浅出 React Hooks](https://juejin.im/post/5cf475d66fb9a07ea944594e)  
