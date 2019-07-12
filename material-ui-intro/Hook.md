@@ -19,6 +19,33 @@ Node 中 Nest 也是用 TypeScript 开发的，还有像 deno。另外 UI 组件
 
 解读TypeScript中的泛型以及条件类型中的推断
 https://juejin.im/post/5d0cf23af265da1b855c5ef6
+
+type interface  
+https://juejin.im/post/5c2723635188252d1d34dc7d
+
+https://devblogs.microsoft.com/typescript/
+
+https://juejin.im/post/5c8a518ee51d455e4d719e2e
+
+https://juejin.im/post/5ca4417d6fb9a05e5a2e41f8
+
+[译] TypeScript 和 Babel：一场美丽的婚姻
+https://juejin.im/post/5c822e426fb9a04a0a5ffb49
+
+TypeScript 代码整洁之道
+https://juejin.im/post/5cfb2b4951882576be276247
+
+TypeScript 从听说到入门（下篇）
+https://juejin.im/post/5ce751aef265da1bbc6faf30
+
+
+node.js python  
+vue react 源码 数据驱动 设计模式  
+项目开源  
+
+
+
+
 ## 参考
 
 - [深入浅出 React Hooks](https://juejin.im/post/5cf475d66fb9a07ea944594e)  
