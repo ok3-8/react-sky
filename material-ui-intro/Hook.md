@@ -1,8 +1,8 @@
-https://juejin.im/post/5cad39b3f265da03502b1c0a  
+https://juejin.im/post/5cad39b3f265da03502b1c0a    
 https://juejin.im/post/5d23e750f265da1b855c7bbe  
 
 
-Cheatsheets for experienced React developers getting started with TypeScript 
+Cheatsheets for experienced React developers getting started with TypeScript   
 https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
 
 https://zhuanlan.zhihu.com/p/65445730
@@ -12,35 +12,40 @@ https://zhuanlan.zhihu.com/p/62401626
 https://github.com/trending/typescript?since=monthly
 
 
-所有能用 JS 写的框架，都将用 TypeScript 写。
+- 所有能用 JS 写的框架，都将用 TypeScript 写。
+- Node 中 Nest 也是用 TypeScript 开发的，还有像 deno。另外 UI 组件库中， Ant Desgin 和 Blueprint 也是的。
 
-Node 中 Nest 也是用 TypeScript 开发的，还有像 deno。另外 UI 组件库中， Ant Desgin 和 Blueprint 也是的。
 
-
-解读TypeScript中的泛型以及条件类型中的推断
+解读TypeScript中的泛型以及条件类型中的推断    
 https://juejin.im/post/5d0cf23af265da1b855c5ef6
 
-type interface  
+type interface    
 https://juejin.im/post/5c2723635188252d1d34dc7d
 
-https://devblogs.microsoft.com/typescript/
-
-https://juejin.im/post/5c8a518ee51d455e4d719e2e
-
+https://devblogs.microsoft.com/typescript/  
+https://juejin.im/post/5c8a518ee51d455e4d719e2e  
 https://juejin.im/post/5ca4417d6fb9a05e5a2e41f8
 
-[译] TypeScript 和 Babel：一场美丽的婚姻
+[译] TypeScript 和 Babel：一场美丽的婚姻  
 https://juejin.im/post/5c822e426fb9a04a0a5ffb49
 
-TypeScript 代码整洁之道
+TypeScript 代码整洁之道  
 https://juejin.im/post/5cfb2b4951882576be276247
 
-TypeScript 从听说到入门（下篇）
+TypeScript 从听说到入门（下篇）  
 https://juejin.im/post/5ce751aef265da1bbc6faf30
 
+TypeScript 高级技巧  
+https://juejin.im/post/5cffb431f265da1b7401f466
 
-node.js python  
-vue react 源码 数据驱动 设计模式  
+在Typescript项目中，如何优雅的使用ESLint和Prettier  
+https://juejin.im/post/5d1d5fe96fb9a07eaf2bae29
+
+基于 TypeScript 的 IoC 和 DI    
+https://juejin.im/post/5d1a0f21f265da1bb13f49fd
+
+- node.js python  
+- vue react 源码 数据驱动 设计模式  
 项目开源  
 
 
