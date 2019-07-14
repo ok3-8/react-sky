@@ -213,6 +213,89 @@ export const MyComponent: React.FunctionComponent<IProps> = ({ text }: IProps): 
 https://www.cnblogs.com/llauser/p/6715409.html
 https://blog.csdn.net/yiifaa/article/details/52372022
 
+
+
+
+
+## 一步一步可登天造极
+
+一、安装路由 react-router-dom 5.x
+
+```js
+npm install react-router-dom -S
+npm install @types/react-router-dom -D
+```
+
+URL: https://reacttraining.com/react-router/web/guides/quick-start
+
+`react-router` 和 `react-router-dom` 区别：
+
+React-router提供了一些router的核心api，包括Router, Route, Switch等，但是它没有提供dom操作进行跳转的api。
+
+React-router-dom提供了BrowserRouter, HashRouter, Route, Link等api,我们可以通过dom的事件控制路由。例如点击一个按钮进行跳转，大多数情况下我们是这种情况，所以在开发过程中，我们更多是使用React-router-dom。
+
+通过 npm 安装 react-router-dom 时发现其依赖 react-router，也就是说不需要显示安装 react-router。
+
+```js
+// 1
+import { Swtich, Route, Router, HashHistory, Link } from 'react-router-dom';
+
+// 2
+import { Switch, Route, Router } from 'react-router';
+import { HashHistory, Link } from 'react-router-dom';
+```
+
+- match  
+- location  
+- history
+
+```js
+import React from 'react';
+import { RouteComponentProps } from 'react-router-dom';
+
+interface defaultProps {
+  age: number
+  name: string
+};
+
+type routesProps = {
+  id: number
+};
+
+type Props = defaultProps & RouteComponentProps<routesProps>
+
+// type routesProps = {
+//   id: number
+// };
+
+// interface Props extends RouteComponentProps<routesProps> {
+//   age: number
+//   name: string
+// }
+
+const App = (props: Props) => {
+  console.log(props)
+  console.log(props.match)
+  console.log(props.location)
+  console.log(props.history)
+  return (
+    <>
+       <div></div>
+    </>
+  );
+}
+
+export default App;
+
+```
+
+
+## 使用 React hook 用法
+
+函数式编程，你不需要定义constructor，render，定义class
+
+
+
 about TS:
 
 https://www.pluralsight.com/guides/composing-react-components-with-typescript  
