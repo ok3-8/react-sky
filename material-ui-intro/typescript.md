@@ -296,6 +296,11 @@ export default App;
 
 
 
+
+
+React项目从Javascript到Typescript的迁移经验总结
+https://segmentfault.com/a/1190000019075274
+
 about TS:
 
 https://www.pluralsight.com/guides/composing-react-components-with-typescript  
