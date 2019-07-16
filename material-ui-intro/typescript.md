@@ -174,6 +174,19 @@ export const MyComponent: React.FunctionComponent<IProps> = ({ text }: IProps): 
 
 ```
 
+你所需要的React+TS的各个击破  
+React+TS项目完整搭建教程  
+使用React+TS的50条军规  
+React+TS在VScode的使用技巧  
+React+TS的一些常见检查和错误提示  
+React16.8+TS使用最新Hook的方案
+
+React16.8+Redux+TS的规划和实现  
+
+React+TS的三个demo带你飞︿(￣︶￣)︿
+
+
+
 
 #### Basic Hooks
 
@@ -212,8 +225,6 @@ export const MyComponent: React.FunctionComponent<IProps> = ({ text }: IProps): 
 
 https://www.cnblogs.com/llauser/p/6715409.html
 https://blog.csdn.net/yiifaa/article/details/52372022
-
-
 
 
 
@@ -299,7 +310,9 @@ export default App;
 
 
 React项目从Javascript到Typescript的迁移经验总结
-https://segmentfault.com/a/1190000019075274
+https://segmentfault.com/a/1190000019075274  
+
+https://segmentfault.com/a/1190000019402237
 
 about TS:
 
