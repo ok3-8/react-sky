@@ -12,9 +12,11 @@
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <input type="text" id="username" />
+  <button id="button">click me to change input value.</button>
   <script type="text/javascript">
     var result = [];
     var username = document.getElementById('username');
+    var button$ = document.getElementById('button');
 
     username.addEventListener("focus", function(event) {
         result.push({
@@ -65,6 +67,10 @@
         });
         //  输出结果
         console.table(result);
+    })
+
+    button$.addEventListener("click", function(event) {
+        username.value = Math.random() * 10 + '';
     })
     
   </script>
