@@ -1,4 +1,98 @@
 
+===========
+
+const people:Record<string,any> = {
+    name: 'chengfeng',
+    age: 10
+}
+
+
+- Partial 作用是将传入的属性变为可选项.
+
+interface iPeople {
+    title: string;
+    name: string;
+}
+
+const people: Partial<iPeople> = {
+    title: 'Delete inactive users',
+};
+定义的结构可以是接口iPeople的任意key
+
+- Readonly 作用是将传入的属性变为变成只读
+
+interface iPeople {
+    title: string;
+    name: string;
+}
+
+const people: Readonly<Todo> = {
+    title: 'todo list',
+    name: chenfeng;
+};
+
+- Required 的作用是将传入的属性变为必选项
+
+interface iPeople {
+    title?: string;
+    name?: string;
+}
+
+const people1: Props = { title: 'ts' }; // OK
+
+const people22: Required<iPeople> = { title: 'ts' }; // Error: property 'name' missing
+
+===========
+
+仅当初始 state 需要从 props 计算得到的时候，才将 state 的声明放在构造函数中，其它情况下使用静态属性声明 state，并且一般情况下不要将 prop 传给 state。
+
+constructor (){
+  this.setState({ people: this.props.people })
+}
+
+state: IState = {
+  people: {},
+};
+
+============
+
+添加非空判断可以提高代码的稳健性
+
+render(){
+  {!!ReactNode || '--'}
+}
+
+============
+
+list 可能是 null 或者 undefined
+list.length 将直接导致前端报错
+
+============
+
+不确定的属性，最后却疯狂的用... 访问不存在的属性
+if (data && data.dataList && Array.isArray(data.dataList) {
+    data.dataList.forEach() 
+}
+
+============
+
+input 输入框使用 trim()
+
+============
+
+在 componentWillUnmount 里面去除副作用的函数
+清除 EventListener
+中止数据请求
+清除定时器
+
+============
+
+for-in 中一定要有 hasOwnProperty 的判断
+
+============
+============
+
+
 ```js
 
 private inputRef =  React.createRef<HTMLInputElement>();

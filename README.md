@@ -10,7 +10,6 @@
 # 我和`React.js`有个约定
 > 尽吃奶力量去揭幕关于`React`一切技术的艺术品展示
 
-
 目录：
 - 揭幕React构建Markdown生成文档和组件展示(实现在页面修改代码实时更新组件)
 - 揭幕关于class类的this实现和绑定
@@ -22,12 +21,10 @@
 
 链接：[Markdown生成文档和组件展示](https://codesandbox.io/embed/fancy-night-87kse?fontsize=14)
 
-
 VScode 创建快捷键模板：
 快速生成代码块。
 ES7 React snippets  
 TS的声明文件。  
-
 
 ## Feature
 
@@ -42,14 +39,10 @@ React内核知识：
  组件、JSX、Virtual DOM、Flux架构、Redux、react-redux和性能优化。   
  一些非常酷的东西：Hooks、惰性加载、Suspense 和缓存 API。
 
-
 ## TypeScript
 
 颗粒化 零件化   
 状态和数据(类型)启动  
-
-
-
 
 设计模式就是使用多了的归纳和总结，甚至可以称为套路。
 
@@ -128,9 +121,6 @@ React内核知识：
 * [在Typescript项目中，如何优雅的使用ESLint和Prettier](https://segmentfault.com/a/1190000019661168)  
 * [项目中使用 TypeScript 的一些感悟](https://segmentfault.com/a/1190000019689245)  
 
-
-
-
 ## 资源
 
 A collection of awesome TypeScript resources：   
@@ -141,10 +131,6 @@ List of top 304 ReactJS Interview Questions & Answers：
 https://github.com/semlinker/reactjs-interview-questions  
 深入理解 TypeScript：  
 https://jkchao.github.io/typescript-book-chinese/
-
-
-
-
 
 ## 卖艺不卖身
 
