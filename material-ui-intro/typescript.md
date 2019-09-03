@@ -436,6 +436,27 @@ https://gist.github.com/treyhuffine
 https://gitconnected.com/learn/react
 
 
+## push to buil TS
+
+https://github.com/yhlben/blog
+
+https://v2.angular.cn/docs/ts/latest/cookbook/aot-compiler.html
+
+
+## 流程
+
+使用gulp-typescript打包
+
+
+
+
+
+
+
+
+
+
+
 
 
 
